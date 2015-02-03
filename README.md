@@ -22,6 +22,10 @@ If this works out, great, if not, I'll fall back to whatever it is replacing tha
 
     npm run build
     
+#### deploy:
+
+using Codeship for deployment. Testing that now
+    
     
 
 
