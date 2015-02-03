@@ -35,6 +35,7 @@
     "build:scripts": "browserify -d src/scripts/main.js -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/main.js -s -l 8 -m assets.json 'dist/{name}{hash}{ext}'",
     "build:styles": "stylus assets/styles/main.styl -m -o dist/ && hashmark -s -l 8 -m assets.json dist/main.css 'dist/{name}{hash}{ext}'",
     "build:markup": "jade assets/markup/index.jade --obj assets.json -o dist",
+    "build:demos": "rimraf src/scripts/demos/*.bundle.js && browserify src/scripts/canvas-pie.js  -o src/scripts/demos/canvas-pie.bundle.js",
     "lint": "jshint --reporter node_modules/jshint-stylish/stylish.js src/scripts/*.js",
     "lint:fix": "fixmyjs src/scripts/*.js",
     "path": "echo $PATH",
