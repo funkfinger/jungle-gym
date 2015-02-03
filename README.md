@@ -1,5 +1,8 @@
 # jungle-gym
-another playground
+
+[ ![Codeship Status for funkfinger/jungle-gym](https://codeship.com/projects/e3688bc0-8ddb-0132-3f2c-5691319bff63/status?branch=master)](https://codeship.com/projects/60797)
+
+
 
 ## Notes:
 NPM is going to be used as both a package / asset manager and as a build tool. See https://github.com/keithamus/npm-scripts-example and http://blog.kewah.com/2014/npm-as-a-front-end-package-manager/ - package.json has some build tasks in it.
