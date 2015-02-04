@@ -63,7 +63,7 @@
     "live-reload": "live-reload --port 9091 dist/",
     "dev": "npm run open:dev -s & parallelshell \"npm run live-reload -s\" \"npm run serve -s\" \"npm run watch -s\"",
     "postinstall": "npm run build",
-    "start": "npm run serve"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
