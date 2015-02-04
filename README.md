@@ -28,6 +28,14 @@ If this works out, great, if not, I'll fall back to whatever it is replacing tha
 #### deploy:
 
 using Codeship for deployment. Testing that now
+
+Codeship / Heroku were not playing nice together- finally saw this in a Heroku doc:
+
+>  The application is now deployed. Ensure that at least one instance of the app is running:
+>  
+>      $ heroku ps:scale web=1
+
+Once I ran that, all was peachy...
     
     
 
